@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/b"
+    tools:context=".AddBooksFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/onLog"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/bac"/>
+
+        <EditText
+            android:id="@+id/titleEditText"
+            android:layout_width="294dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="55dp"
+            android:backgroundTint="@drawable/edit"
+            android:hint="Название книги"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="20sp" /><Button
+            android:id="@+id/searchButton"
+            android:layout_width="121dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="140dp"
+            android:background="@drawable/obv"
+            android:text="Найти"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/coverImageView"
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/authorTextView"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:textAlignment="center"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white" />
+
+        <EditText
+            android:id="@+id/sectionEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@drawable/edit"
+            android:hint="Раздел"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/daysEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@drawable/edit"
+            android:hint="Число дней"
+            android:inputType="number"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="20sp" />
+
+        <CheckBox
+            android:id="@+id/electronicCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@drawable/edit"
+            android:text="Электронная"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="20sp" />
+
+        <CheckBox
+            android:id="@+id/recomendationCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@drawable/edit"
+            android:text="Рекомендовать"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="162dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/obv"
+            android:text="Сохранить"
+            android:textColor="@color/white" />
+
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="103dp"
+        android:layout_marginTop="555dp"
+        android:nestedScrollingEnabled="false" />
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="168dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="670dp"
+        android:background="@drawable/obv"
+        android:text="Удалить выбранные"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/clearButton"
+        android:layout_width="126dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="670dp"
+        android:background="@drawable/obv"
+        android:text="Очистить базу"
+
+        android:textColor="@color/white" />
+</FrameLayout>

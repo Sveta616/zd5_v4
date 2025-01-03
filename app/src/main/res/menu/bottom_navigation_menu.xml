@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_books"
+        android:title="Книги" />
+    <item
+        android:id="@+id/nav_readers"
+        android:title="Читатели" />
+    <item
+        android:id="@+id/nav_teachers"
+        android:title="Преподаватели" />
+    <item
+        android:id="@+id/nav_students"
+        android:title="Студенты" />
+    <item
+        android:id="@+id/nav_reservation"
+        android:title="Бронь" />
+    <item
+        android:id="@+id/nav_exit"
+        android:title="Выход" />
+</menu>
